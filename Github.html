@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramkumar Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Noto Sans Devanagari', sans-serif;
+margin:0;
+background:#f4f4f4;
+transition:0.4s;
+}
+
+/* Dark Mode */
+.dark{
+background:#121212;
+color:white;
+}
+
+/* Header */
+header{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* Colorful Welcome */
+.welcome{
+font-size:30px;
+font-weight:bold;
+background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px rgba(255,0,0,0.7);
+}
+to{
+text-shadow:0 0 20px rgba(0,0,255,0.9);
+}
+}
+
+/* Container */
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* Card */
+.card{
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.dark .card{
+background:#1e1e1e;
+}
+
+.card:hover{
+transform:scale(1.02);
+}
+
+img{
+border-radius:50%;
+}
+
+/* Skills */
+.skills-bar{
+margin:10px 0;
+}
+
+.bar{
+height:10px;
+background:#ddd;
+border-radius:20px;
+}
+
+.fill{
+height:10px;
+background:#3498db;
+border-radius:20px;
+}
+
+/* Button */
+button{
+padding:10px 20px;
+border:none;
+background:#3498db;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2980b9;
+}
+
+/* Form */
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* Footer */
+footer{
+text-align:center;
+background:#2c3e50;
+color:white;
+padding:20px;
+margin-top:20px;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1 class="welcome">Welcome to Ramkumar Introduction Website</h1>
+<p>Content Creator | Designer | Learner</p>
+
+<img src="photo.jpg" width="140">
+
+<br><br>
+
+<button onclick="darkMode()">Dark Mode</button>
+
+</header>
+
+
+<div class="container">
+
+<!-- ABOUT -->
+<div class="card">
+<h2>About Me</h2>
+<p>Main ek content creator banna chahta hu aur social media ke liye videos banata hu.</p>
+</div>
+
+
+<!-- SKILLS -->
+<div class="card">
+<h2>Skills</h2>
+
+<div class="skills-bar">
+YouTube
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skills-bar">
+Instagram
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+</div>
+
+<div class="skills-bar">
+Study
+<div class="bar"><div class="fill" style="width:60%"></div></div>
+</div>
+
+<div class="skills-bar">
+Python
+<div class="bar"><div class="fill" style="width:50%"></div></div>
+</div>
+
+</div>
+
+
+<!-- PROJECT -->
+<div class="card">
+<h2>Projects</h2>
+
+<p>1. Portfolio Website</p>
+<p>2. Login Page Design</p>
+<p>3. YouTube Thumbnail Design</p>
+
+</div>
+
+
+<!-- RESUME -->
+<div class="card">
+<h2>Resume</h2>
+<a href="resume.pdf" download>
+<button>Download Resume</button>
+</a>
+</div>
+
+
+<!-- SOCIAL -->
+<div class="card social">
+<h2>Social Links</h2>
+
+<a href="https://www.youtube.com/@vloger2025all" target="_blank">YouTube Channel</a><br>
+
+<a href="https://instagram.com/" target="_blank">Instagram Profile</a>
+
+</div>
+
+
+<!-- CONTACT -->
+<div class="card">
+<h2>Contact Me</h2>
+
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="4" placeholder="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Ramkumar Portfolio</p>
+</footer>
+
+
+<script>
+
+/* Dark Mode */
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+
+/* Welcome Popup */
+window.onload=function(){
+alert("Welcome to Ramkumar Introduction Website");
+}
+
+</script>
+
+</body>
+</html>
